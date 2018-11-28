@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camerastable : MonoBehaviour {
+public class cameraStable : MonoBehaviour {
 
     public GameObject theCar;
     public float carX;
@@ -15,6 +15,6 @@ public class Camerastable : MonoBehaviour {
         carY = theCar.transform.eulerAngles.y;
         carZ = theCar.transform.eulerAngles.z;
 
-        transform.eulerAngles = new Vector3(carX - carX, carY, carZ - Carz);
+        transform.eulerAngles = new Vector3(carX - carX, carY, carZ - carZ);
     }
 }
