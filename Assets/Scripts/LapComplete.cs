@@ -39,6 +39,10 @@ using UnityEngine.UI;
 
         MilliDisplay.GetComponent<Text>().text = "" + LapTimeManager.MilliCount;
 
+        PlayerPrefs.SetInt("MinSave", LapTimeManager.MinuteCount);
+        PlayerPrefs.SetInt("SecSave", LapTimeManager.SecondCount);
+        PlayerPrefs.SetFloat("MilliSave", LapTimeManager.MilliCount);
+
         LapTimeManager.MinuteCount = 0;
         LapTimeManager.SecondCount = 0;
         LapTimeManager.MilliCount = 0;
