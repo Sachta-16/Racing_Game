@@ -20,9 +20,9 @@ public class LoadLapTime : MonoBehaviour
         SecondCount = PlayerPrefs.GetInt("SecSave");
         MilliCount = PlayerPrefs.GetFloat("MilliSave");
 
-        MinDisplay.GetComponent<Text>().text = "" + MinCount;
-        SecDisplay.GetComponent<Text>().text = "" + SecondCount;
-        MilliDisplay.GetComponent<Text>().text = "" + MilliDisplay;
+        MinDisplay.GetComponent<Text>().text = "" + MinCount + ":";
+        SecDisplay.GetComponent<Text>().text = "" + SecondCount + ".";
+        MilliDisplay.GetComponent<Text>().text = "" + MilliCount;
 
     }
 }

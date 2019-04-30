@@ -16,8 +16,22 @@ using UnityEngine.UI;
 
     public GameObject LapTimeBox;
 
+    public GameObject LapCounter;
+    public int LapsDone;
+
+    public GameObject RaceFinish;
+
+    void Update()
+    {
+        if(LapsDone == 2)
+        {
+            RaceFinish.SetActive(true);
+        }
+    }
+
     void OnTriggerEnter()
     {
+        LapsDone += 1;
 
         if (LapTimeManager.SecondCount <= 9)
         {
@@ -46,6 +60,7 @@ using UnityEngine.UI;
         LapTimeManager.MinuteCount = 0;
         LapTimeManager.SecondCount = 0;
         LapTimeManager.MilliCount = 0;
+        LapCounter.GetComponent<Text>().text = "" + LapsDone;
 
         HalfLapTrig.SetActive(true);
         LapCompleteTrig.SetActive(false);

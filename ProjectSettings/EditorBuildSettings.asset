@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Main Menu.unity
+    guid: bfc4b62868fe0ea429d4178145a6e0db
+  - enabled: 1
+    path: Assets/Track selection.unity
+    guid: f89dc9f58972d9e4bbf2a96fe3b5d585
+  - enabled: 1
+    path: Assets/racing.unity
+    guid: ef174407bcd23aa4d963980014d26bd9
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/racing 1.unity
+    guid: 9b361b0f9c406fd4ab80308dfe0dd6c2
   m_configObjects: {}
